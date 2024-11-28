@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1.将字符串中的大写字母变成小写，小写字母变成大写字母，如：
+        // AbCd  --> aBcD 
+</body>
+<script>
+    let y='';
+    let x=prompt("输入大小写字母");
+    for(let i=0;i<x.length;i++){
+        if(x[i]<='Z'  &&  x[i]>='A'){
+            y+=x[i].toLowerCase();
+        }else{
+            y+=x[i].toUpperCase();;
+        }
+    }
+    console.log(y);
+    alert(y);
+    
+</script>
+</html>

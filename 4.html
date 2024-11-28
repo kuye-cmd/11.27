@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    4.删除字符串中所有数字，但保留空格字符串       "ert 123dd df"  ---->"ert dd df"
+</body>
+    <script>
+        let str ='ert 123dd df';
+        let x='';
+        for(let i=0;i<str.length;i++){
+            if(str[i]<='9' && str[i]>='1'){
+                continue;
+            }
+            x = x+str[i];
+        }
+        console.log(x);
+        alert(x);
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    2.将字符串中的字母使用**重新拼接：
+        // 如： var str = "a b c";    变成 --> a**b**c
+</body>
+    <script>
+        let str=prompt("输入字母");
+        let arr=str.split(" ");
+        str=""
+        for(let i=0;i<arr.length;i++){
+            str+=arr[i]
+            if (i==arr.length-1) {
+                continue;
+            }
+            str+="**";
+        }
+        console.log(str);
+        alert(str);
+    </script>
+</html>

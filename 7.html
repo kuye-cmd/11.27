@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    7.去字符串中所有的空格    "    a    b    c     " ---->"abc"  
+</body>
+    <script>
+        let str ='    a    b    c     ';
+        let x='';
+        console.log(str);
+        for(let i=0;i<str.length;i++){
+            if(str[i]===' '){
+                continue;
+            }
+            x = x+str[i];
+        }
+        console.log(x);
+        alert(x);
+    </script>
+</html>
